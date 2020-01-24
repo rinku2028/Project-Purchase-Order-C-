@@ -28,8 +28,6 @@ namespace datainsert
             }
             else
             {
-                // string dataconn = "Data Source=it15;Initial Catalog=access;Integrated Security=True";
-                // SqlConnection sqlconn = new SqlConnection(dataconn);
                 try
                 {
                     sqlconn.Open();
