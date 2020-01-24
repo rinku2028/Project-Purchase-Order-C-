@@ -150,6 +150,7 @@ namespace datainsert
             txtunitprice.Text = "";
             txttotalprice.Text = "";
             txtdate.Text = "";
+            lblMessage.Text="";
         }
     }
 }
