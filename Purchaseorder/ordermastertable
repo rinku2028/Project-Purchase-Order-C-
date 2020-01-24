@@ -1,0 +1,8 @@
+CREATE TABLE [dbo].[ordermaster](
+        [id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY ,
+        [partnumber] [varchar](50) NULL,
+        [tranparticular] [varchar](100) NULL,
+        [quantity] [int] NULL,
+        [unitprice] [int] NULL,
+        [totalprice] [int] NULL,
+        [orderdate] [date] NULL)
