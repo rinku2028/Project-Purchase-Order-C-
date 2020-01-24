@@ -93,9 +93,6 @@ namespace datainsert
 
         protected void btnupdate_Click(object sender, EventArgs e)
         {
-            //DateTime dt = new DateTime
-            // string dataconn = "Data Source=it15;Initial Catalog=access;Integrated Security=True";
-            //  SqlConnection sqlconn = new SqlConnection(dataconn);
             sqlconn.Open();
             string sql = @"update ordermaster set tranparticular='" + txtparticulars.Text + "',quantity='" + txtqunatity.Text + "',unitprice='" + txtunitprice.Text + "',totalprice='" + txttotalprice.Text + "',orderdate='" + Convert.ToDateTime(txtdate.Text).ToString("dd/MM/yyyy") + "'  where partnumber='" + txtpartnum.Text + "'";
             SqlCommand sqlcmd = new SqlCommand(sql, sqlconn);
@@ -108,8 +105,6 @@ namespace datainsert
 
         protected void btndelete_Click(object sender, EventArgs e)
         {
-            //  string dataconn = "Data Source=it15;Initial Catalog=access;Integrated Security=True";
-            //  SqlConnection sqlconn = new SqlConnection(dataconn);
             sqlconn.Open();
             string sql = @"delete from ordermaster where partnumber='" + txtpartnum.Text + "'";
             SqlCommand sqlcommand = new SqlCommand(sql, sqlconn);
